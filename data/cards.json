@@ -51,7 +51,8 @@
     ],
     "reviewed_by": "Keyli",
     "reviewed_at": "2026-09-15",
-    "readability_grade": 4.6
+    "readability_grade": 4.6,
+    "jurisdiction_level": "city"
   },
   {
     "id": "lnk-charter-petitions-2026",
@@ -106,7 +107,8 @@
     ],
     "reviewed_by": "Keyli",
     "reviewed_at": "2026-09-15",
-    "readability_grade": 6.4
+    "readability_grade": 6.4,
+    "jurisdiction_level": "city"
   },
   {
     "id": "lnk-airport-redway-2023",
@@ -172,7 +174,8 @@
     ],
     "reviewed_by": "Keyli",
     "reviewed_at": "2026-09-15",
-    "readability_grade": 5.1
+    "readability_grade": 5.1,
+    "jurisdiction_level": "city"
   },
   {
     "id": "lnk-stormwater-bond-2024",
@@ -231,6 +234,70 @@
     ],
     "reviewed_by": "Keyli",
     "reviewed_at": "2026-09-15",
-    "readability_grade": 5.0
+    "readability_grade": 5.0,
+    "jurisdiction_level": "city"
+  },
+  {
+    "id": "ne-lb22-2025",
+    "jurisdiction": "nebraska-legislature",
+    "official_ref": "Legislative Bill 22 (2025), Nebraska Legislature",
+    "plain_title": "Nebraska Medicaid to pay for at-home nurse visits",
+    "summary": "Nebraska already funds some home-visiting programs for new parents. This law adds a new way to pay for one kind: nurse visits for postpartum mothers and babies six months old or younger. It only covers families on Medicaid. The state must ask the federal government to approve the change by October 2025. Families can say no to a visit at any time.",
+    "impacts": [
+      {
+        "text": "Medicaid families with a baby six months old or younger can get visits from a nurse at home. They can turn down a visit at any time.",
+        "source_id": "src-1"
+      },
+      {
+        "text": "The state plans to pay its share from a specific health-care fund, not general tax money. If that fund runs short, lawmakers may need to find money elsewhere.",
+        "source_id": "src-2"
+      },
+      {
+        "text": "The state's own estimate puts the cost at about $1.1 million in the first year and about $2.2 million the year after. Most of that is paid back by federal Medicaid money.",
+        "source_id": "src-2"
+      }
+    ],
+    "fiscal": {
+      "text": "State fiscal analysts estimate $1,075,600 in year one ($601,691 federal, $473,909 from a state health-care fund) and $2,151,200 in year two ($1,177,997 federal, $973,203 state).",
+      "source_id": "src-2"
+    },
+    "sections": [
+      "taxes-and-budget"
+    ],
+    "status": "passed",
+    "status_date": "2025-04-09",
+    "sponsor_id": "person-ne-senator-d26",
+    "jurisdiction_level": "state",
+    "applies_to_district": {
+      "layer": "legislature",
+      "district": "District 26"
+    },
+    "votes": [],
+    "votes_note": "The bill passed 47-0, with 2 present but not voting, on Final Reading. Individual votes by name were not confirmed for this card.",
+    "sources": [
+      {
+        "id": "src-1",
+        "title": "Legislative Bill 22 (2025) \u2014 Slip Law",
+        "url": "https://nebraskalegislature.gov/FloorDocs/109/PDF/Slip/LB22.pdf"
+      },
+      {
+        "id": "src-2",
+        "title": "LB22 Fiscal Note",
+        "url": "https://nebraskalegislature.gov/FloorDocs/109/PDF/FN/LB22_20250224-092822.pdf"
+      },
+      {
+        "id": "src-3",
+        "title": "LB22 bill overview and vote history \u2014 Nebraska Legislature",
+        "url": "https://nebraskalegislature.gov/bills/view_bill.php?DocumentID=59097"
+      },
+      {
+        "id": "src-4",
+        "title": "Postpartum home visitation program narrowed, advanced \u2014 Unicameral Update",
+        "url": "https://update.legislature.ne.gov/?p=37355"
+      }
+    ],
+    "reviewed_by": "Keyli",
+    "reviewed_at": "2026-09-15",
+    "readability_grade": 7.2
   }
 ]

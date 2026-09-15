@@ -1,9 +1,8 @@
 import { el, clear } from "./dom.js";
 
 // PLAN.md §5: the privacy statement must render before any location input,
-// not behind a link. Phase 1 has no location input yet (hard-coded location),
-// but the statement still ships up front since it's non-negotiable.
-export function renderIntro(container, { locationLabel, onStart }) {
+// not behind a link. This is non-negotiable.
+export function renderIntro(container, { onStart }) {
   clear(container);
 
   const view = el("div", { class: "intro" }, [
@@ -19,16 +18,11 @@ export function renderIntro(container, { locationLabel, onStart }) {
       el("h2", { text: "Before you start" }),
       el("ul", {}, [
         el("li", { text: "Your address never leaves your browser. It is never sent to any server." }),
+        el("li", { text: "We ask for your street name and ZIP only — never a house number." }),
         el("li", { text: "No account, no login, no email — ever." }),
         el("li", { text: "Nothing you do here is tracked or saved after you close this tab." }),
         el("li", { text: "This never tells you who to vote for. It only shows what happened." }),
       ]),
-    ]),
-    el("div", { class: "location-note" }, [
-      el("strong", { text: "Phase 1 demo notice: " }),
-      document.createTextNode(
-        `Address lookup isn't built yet. This preview is showing example results for ${locationLabel}.`
-      ),
     ]),
     el("button", {
       class: "btn",

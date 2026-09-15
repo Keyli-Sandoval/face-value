@@ -6,6 +6,13 @@ const REACTIONS = [
   { id: "not-sure", label: "Not sure" },
 ];
 
+const LEVEL_LABEL = {
+  city: "CITY",
+  county: "COUNTY",
+  state: "STATE",
+  federal: "FEDERAL",
+};
+
 const STATUS_LABEL = {
   passed: "Passed",
   failed: "Failed",
@@ -59,7 +66,10 @@ function renderFront(card, reaction, onReact) {
     class: "card-face card-face-front",
     "aria-hidden": reaction ? null : null,
   }, [
-    el("span", { class: "card-section-tag", text: sectionLabel(card) }),
+    el("span", { class: "card-section-tag" }, [
+      el("span", { class: "level-badge", text: LEVEL_LABEL[card.jurisdiction_level] || "CITY" }),
+      document.createTextNode(" " + sectionLabel(card)),
+    ]),
     el("h2", { class: "card-title", text: card.plain_title }),
     el("p", { class: "card-body", text: card.summary }),
     renderImpacts(card),

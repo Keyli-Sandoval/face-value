@@ -141,6 +141,65 @@ a:focus-visible,
   margin: 0 0 1.25rem;
 }
 
+/* ---------- Forms ---------- */
+
+form label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin: 1rem 0 0.3rem;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+form input[type="text"]:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 1px;
+}
+
+form .btn[type="submit"] {
+  margin-top: 1.25rem;
+  width: 100%;
+}
+
+form .btn-secondary {
+  margin-top: 0.75rem;
+  width: 100%;
+}
+
+/* ---------- Section picker ---------- */
+
+.section-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.25rem 0;
+}
+
+.section-chip {
+  border-radius: 999px;
+  border: 2px solid var(--border);
+  background: var(--surface);
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.section-chip[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, white);
+  color: var(--accent);
+}
+
 /* ---------- Progress ---------- */
 
 .progress {
@@ -215,6 +274,17 @@ a:focus-visible,
 
 .card-flip.is-flipped .card-face-front {
   visibility: hidden;
+}
+
+.level-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--accent-ink);
+  border-radius: 4px;
+  padding: 0.1rem 0.4rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  margin-right: 0.35rem;
 }
 
 .card-section-tag {
