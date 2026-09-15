@@ -1,0 +1,236 @@
+[
+  {
+    "id": "lnk-min-wage-2026",
+    "jurisdiction": "lincoln-city",
+    "official_ref": "Minimum wage restoration ordinance, Lincoln City Council (adopted May 11, 2026)",
+    "plain_title": "Keep yearly increases in Lincoln's $15 minimum wage",
+    "summary": "In 2022, Nebraska voters said yes to a $15 minimum wage. Under that law, wages would rise a little each year to keep up with prices. In 2026, state lawmakers passed a new law. It caps that yearly rise at 1.75% and sets a lower wage for younger workers. This ordinance keeps the old rule for Lincoln instead. Wages here will keep rising with prices, not the new state cap.",
+    "impacts": [
+      {
+        "text": "Minimum-wage workers in Lincoln still get a raise each year based on prices. The state's new cap does not apply here.",
+        "source_id": "src-1"
+      },
+      {
+        "text": "This rule covers workers of every age. The state's lower wage for younger workers does not apply in Lincoln.",
+        "source_id": "src-2"
+      }
+    ],
+    "fiscal": {
+      "text": "No one has published a cost estimate for this ordinance. The cost is unknown.",
+      "source_id": "src-1"
+    },
+    "sections": [
+      "wages-and-work"
+    ],
+    "status": "blocked-in-court",
+    "status_date": "2026-07-17",
+    "sponsor_id": "person-lincoln-council-d1",
+    "votes": [],
+    "votes_note": "The ordinance passed 6-1. Available reporting did not publish how each council member voted by name.",
+    "sources": [
+      {
+        "id": "src-1",
+        "title": "Lincoln City Council votes to restore inflation-based minimum wage increases",
+        "url": "https://www.1011now.com/2026/05/11/lincoln-city-council-votes-restore-inflation-based-minimum-wage-increases/"
+      },
+      {
+        "id": "src-2",
+        "title": "Attorney General Hilgers Sues City of Lincoln Over Its Minimum Wage Ordinance",
+        "url": "https://ago.nebraska.gov/news/attorney-general-hilgers-sues-city-lincoln-over-its-unconstitutional-minimum-wage-ordinance"
+      },
+      {
+        "id": "src-3",
+        "title": "Lancaster County District Court Prohibits the City of Lincoln from Enforcing Minimum Wage Ordinance",
+        "url": "https://ago.nebraska.gov/lancaster-county-district-court-prohibits-city-lincoln-enforcing-unconstitutional-minimum-wage"
+      },
+      {
+        "id": "src-4",
+        "title": "Nebraska Initiative 433, Minimum Wage Increase Initiative (2022)",
+        "url": "https://ballotpedia.org/Nebraska_Initiative_433,_Minimum_Wage_Increase_Initiative_(2022)"
+      }
+    ],
+    "reviewed_by": "Keyli",
+    "reviewed_at": "2026-09-15",
+    "readability_grade": 4.6
+  },
+  {
+    "id": "lnk-charter-petitions-2026",
+    "jurisdiction": "lincoln-city",
+    "official_ref": "State ex rel. Hilgers v. Weber, Nebraska Supreme Court mandamus order (Sept. 9, 2026)",
+    "plain_title": "Three citizen petitions to change city elections reach the ballot",
+    "summary": "Three petitions asked Lincoln voters to change city elections. One would move city elections to even years, starting in 2028. One would limit council members to two terms in a row. One would let some people who live just outside the city vote in city elections, but not on bond questions. Organizers collected enough signatures for all three. The city said the petitions came in too late for the November 2026 ballot. The Nebraska Supreme Court disagreed. It ordered the city to put all three on this November's ballot. On September 14, 2026, the mayor and council chair proposed their own versions of two of the changes.",
+    "impacts": [
+      {
+        "text": "If this passes, Lincoln's next city election moves from 2027 to 2028. That lines up with state and federal elections.",
+        "source_id": "src-1"
+      },
+      {
+        "text": "If this passes, council members can serve at most two four-year terms in a row.",
+        "source_id": "src-1"
+      },
+      {
+        "text": "If this passes, some people who live near Lincoln but not inside it could vote in city elections. They could not vote on bond questions.",
+        "source_id": "src-1"
+      }
+    ],
+    "sections": [
+      "elections-and-voting"
+    ],
+    "status": "pending",
+    "status_date": "2026-09-09",
+    "sponsor_id": "person-tony-fulton",
+    "sponsor_role": "Organized by",
+    "votes": [],
+    "votes_note": "This wasn't decided by a council vote. Organizers gathered petition signatures, and the Nebraska Supreme Court ordered the city to put the measures on the ballot.",
+    "sources": [
+      {
+        "id": "src-1",
+        "title": "Conservative group submits new signatures for 3 petitions to reshape Lincoln city elections",
+        "url": "https://nebraskaexaminer.com/2026/08/19/conservative-group-submits-new-signatures-for-3-petitions-to-reshape-lincoln-city-elections/"
+      },
+      {
+        "id": "src-2",
+        "title": "Proposed Lincoln city charter amendments too late for Nov. 3 ballot, city attorney decides",
+        "url": "https://nebraskaexaminer.com/2026/08/27/proposed-lincoln-city-charter-amendments-too-late-for-nov-3-ballot-city-attorney-decides/"
+      },
+      {
+        "id": "src-3",
+        "title": "Nebraska Supreme Court rules initiatives to change Lincoln elections must be added to ballot",
+        "url": "https://www.1011now.com/2026/09/09/nebraska-supreme-court-rules-initiatives-change-lincoln-elections-must-be-added-ballot/"
+      },
+      {
+        "id": "src-4",
+        "title": "Lincoln mayor, council chair unveil alternate charter amendments ahead of 2026 ballot",
+        "url": "https://nebraskaexaminer.com/2026/09/14/lincoln-city-council-goes-on-defense-with-alternative-charter-amendments/"
+      }
+    ],
+    "reviewed_by": "Keyli",
+    "reviewed_at": "2026-09-15",
+    "readability_grade": 6.4
+  },
+  {
+    "id": "lnk-airport-redway-2023",
+    "jurisdiction": "lincoln-city",
+    "official_ref": "Nebraska State Auditor report OE550201-12142023 (Lincoln Airport Authority / Red Way)",
+    "plain_title": "Airport board's $700,000 bet on an airline that failed",
+    "summary": "The Lincoln Airport Authority is a 5-member board. Lincoln voters elect this board separately from the city council. In 2022 and 2023, the board backed a new airline called Red Way. It gave the airline federal pandemic-relief money. It also waived fees the airline owed. Red Way stopped flying after less than three months, in August 2023. A state audit found the board spent more than $700,000 in local public money on the deal. The audit said the deal broke state law.",
+    "impacts": [
+      {
+        "text": "The board promised up to $3 million in federal pandemic-relief money to help Red Way start flying.",
+        "source_id": "src-1"
+      },
+      {
+        "text": "The board gave more than $700,000 in local public money. It also waived fees Red Way owed.",
+        "source_id": "src-1"
+      },
+      {
+        "text": "Red Way expected $8.8 million in ticket sales in its first three months. It sold about a quarter of that.",
+        "source_id": "src-3"
+      }
+    ],
+    "fiscal": {
+      "text": "The audit found more than $700,000 in local public money spent on this deal. Counting waived fees and federal money, the total may be near $3.7 million.",
+      "source_id": "src-1"
+    },
+    "sections": [
+      "taxes-and-budget"
+    ],
+    "status": "failed",
+    "status_date": "2023-12-14",
+    "approving_body": "Lincoln Airport Authority Board",
+    "board_members": [
+      "person-airport-hove",
+      "person-airport-behmer-popp",
+      "person-airport-stokes",
+      "person-airport-emlich",
+      "person-airport-olsson"
+    ],
+    "board_note": "These are the Authority's current elected board members. Available reporting did not confirm the board's exact makeup at the time the Red Way deal was approved.",
+    "votes": [],
+    "votes_note": "The Lincoln Airport Authority is a separate elected board. Your city council member does not vote on its decisions.",
+    "sources": [
+      {
+        "id": "src-1",
+        "title": "State auditor slams 'riverboat gamble' with defunct Red Way airline, saying the deal clearly violated law, drained $700,000 in taxpayer funds",
+        "url": "https://nebraskaexaminer.com/2023/12/14/state-auditor-slams-riverboat-gamble-with-defunct-red-way-airline-saying-the-deal-clearly-violated-law-drained-700000-in-taxpayer-funds/"
+      },
+      {
+        "id": "src-2",
+        "title": "Nebraska State Auditor report: Lincoln Airport Authority / Red Way",
+        "url": "https://auditors.nebraska.gov/APA_Reports/2023/OE550201-12142023-Lincoln_Airport_Authority_Red_Way_Letter_Press_Release.pdf"
+      },
+      {
+        "id": "src-3",
+        "title": "Defunct Red Way Airlines' operation cost local taxpayers around $700,000, says Nebraska State Auditor report",
+        "url": "https://nebraskapublicmedia.org/es/news/news-articles/defunct-red-way-airlines-operation-cost-local-taxpayers-around-700000-dollars-says-nebraska-state-auditor-report/"
+      },
+      {
+        "id": "src-4",
+        "title": "Lincoln Airport \u2014 Airport Board and Senior Staff",
+        "url": "https://lincolnairport.com/airport-board-and-senior-staff/"
+      }
+    ],
+    "reviewed_by": "Keyli",
+    "reviewed_at": "2026-09-15",
+    "readability_grade": 5.1
+  },
+  {
+    "id": "lnk-stormwater-bond-2024",
+    "jurisdiction": "lincoln-city",
+    "official_ref": "2024 Stormwater and Flood Management Bond, approved by voters Nov. 5, 2024",
+    "plain_title": "A $13.9 million bond to fix flooding and drainage citywide",
+    "summary": "Lincoln's stormwater system needs regular fixes. These fixes cut flooding and improve water quality. In July 2024, the city council voted to ask voters for a bond. The bond is $13.9 million over 20 years. It pays for more than 20 drainage and flood-control projects. Voters approved the bond in November 2024. Lincoln has passed bonds like this before.",
+    "impacts": [
+      {
+        "text": "The bond costs the average Lincoln home about $9.65 a year. That home is worth about $280,000. The extra cost starts in the 2025-26 tax year.",
+        "source_id": "src-3"
+      },
+      {
+        "text": "About $5.7 million goes to drainage studies and projects. About $3.6 million goes to flood reduction. Another $3.6 million goes to stream work. $1 million goes to water quality and street sweepers.",
+        "source_id": "src-3"
+      },
+      {
+        "text": "Some of the projects are at 48th and Cornhusker, 10th and Park Avenue, and Haines Branch.",
+        "source_id": "src-3"
+      }
+    ],
+    "fiscal": {
+      "text": "Total bond: $13.9 million over 20 years. It costs the average homeowner about $9.65 a year.",
+      "source_id": "src-3"
+    },
+    "sections": [
+      "taxes-and-budget"
+    ],
+    "status": "passed",
+    "status_date": "2024-11-05",
+    "approving_body": "Lincoln City Council",
+    "votes": [
+      {
+        "person_id": "person-lincoln-council-d1",
+        "stage": "final",
+        "vote": "yes"
+      }
+    ],
+    "votes_note": "The council vote was unanimous, 7-0.",
+    "sources": [
+      {
+        "id": "src-1",
+        "title": "Lincoln City Council passes nearly $14 million stormwater bond issue on November ballot",
+        "url": "https://www.1011now.com/2024/07/30/lincoln-city-council-passes-nearly-14-million-stormwater-bond-issue-november-ballot/"
+      },
+      {
+        "id": "src-2",
+        "title": "Lincoln, Nebraska, Stormwater and Flood Management Bond Measure (November 2024)",
+        "url": "https://ballotpedia.org/Lincoln,_Nebraska,_Stormwater_and_Flood_Management_Bond_Measure_(November_2024)"
+      },
+      {
+        "id": "src-3",
+        "title": "2024 Stormwater Bond \u2014 City of Lincoln, NE",
+        "url": "https://www.lincoln.ne.gov/City/Departments/LTU/LTU-Projects/WSM/Bond-Issues/2024"
+      }
+    ],
+    "reviewed_by": "Keyli",
+    "reviewed_at": "2026-09-15",
+    "readability_grade": 5.0
+  }
+]

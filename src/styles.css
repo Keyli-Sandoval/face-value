@@ -1,0 +1,375 @@
+:root {
+  color-scheme: light;
+  --bg: #faf9f6;
+  --surface: #ffffff;
+  --ink: #1a1a1a;
+  --ink-muted: #4a4a4a;
+  --border: #d8d5cc;
+  --accent: #1d4e89;
+  --accent-ink: #ffffff;
+  --agree: #1d6b3f;
+  --disagree: #8a2c2c;
+  --unsure: #6a5a1f;
+  --focus: #1d4e89;
+  --radius: 12px;
+  --max-width: 480px;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#app {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 1rem 3rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+a {
+  color: var(--accent);
+}
+
+button {
+  font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* ---------- Buttons ---------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.25rem;
+  border-radius: var(--radius);
+  border: 2px solid var(--accent);
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  min-height: 44px;
+}
+
+.btn:hover {
+  filter: brightness(1.08);
+}
+
+.btn.btn-secondary {
+  background: transparent;
+  color: var(--accent);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ---------- Intro screen ---------- */
+
+.intro h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.25rem;
+}
+
+.intro .tagline {
+  color: var(--ink-muted);
+  margin-top: 0;
+}
+
+.privacy-box {
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin: 1.25rem 0;
+}
+
+.privacy-box h2 {
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+.privacy-box ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.privacy-box li {
+  margin-bottom: 0.35rem;
+}
+
+.location-note {
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  margin: 0 0 1.25rem;
+}
+
+/* ---------- Progress ---------- */
+
+.progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  margin-bottom: 0.75rem;
+}
+
+.progress-track {
+  flex: 1;
+  height: 6px;
+  background: var(--border);
+  border-radius: 999px;
+  margin-left: 0.75rem;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--accent);
+}
+
+/* ---------- Card ---------- */
+
+.card-scene {
+  perspective: 1400px;
+  margin-bottom: 1.25rem;
+}
+
+.card-flip {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card-flip.is-flipped {
+  transform: rotateY(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-flip {
+    transition: none;
+  }
+}
+
+.card-face {
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  backface-visibility: hidden;
+}
+
+.card-face-front {
+  position: relative;
+}
+
+.card-face-back {
+  position: absolute;
+  inset: 0;
+  transform: rotateY(180deg);
+  overflow-y: auto;
+}
+
+/* When not flipped, back face must not be reachable */
+.card-flip:not(.is-flipped) .card-face-back {
+  visibility: hidden;
+}
+
+.card-flip.is-flipped .card-face-front {
+  visibility: hidden;
+}
+
+.card-section-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin: 0 0 0.75rem;
+  line-height: 1.3;
+}
+
+.card-body {
+  margin: 0 0 1rem;
+}
+
+details.card-impacts {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem 0.85rem;
+  margin-bottom: 1rem;
+}
+
+details.card-impacts summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+details.card-impacts ul {
+  padding-left: 1.1rem;
+  margin: 0.6rem 0 0;
+}
+
+details.card-impacts li {
+  margin-bottom: 0.5rem;
+}
+
+.impact-source {
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+}
+
+.card-source-line {
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+  border-top: 1px solid var(--border);
+  padding-top: 0.6rem;
+  margin-top: 0.6rem;
+}
+
+.card-source-line a {
+  color: inherit;
+}
+
+/* ---------- Reactions ---------- */
+
+.reactions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.reaction-btn {
+  border-radius: var(--radius);
+  border: 2px solid var(--border);
+  background: var(--surface);
+  padding: 0.75rem 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  min-height: 48px;
+}
+
+.reaction-btn[data-reaction="agree"][aria-pressed="true"] {
+  border-color: var(--agree);
+  background: color-mix(in srgb, var(--agree) 12%, white);
+}
+
+.reaction-btn[data-reaction="disagree"][aria-pressed="true"] {
+  border-color: var(--disagree);
+  background: color-mix(in srgb, var(--disagree) 12%, white);
+}
+
+.reaction-btn[data-reaction="not-sure"][aria-pressed="true"] {
+  border-color: var(--unsure);
+  background: color-mix(in srgb, var(--unsure) 12%, white);
+}
+
+/* ---------- Reveal (back of card) ---------- */
+
+.reveal-row {
+  margin-bottom: 0.85rem;
+}
+
+.reveal-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-muted);
+  margin: 0 0 0.15rem;
+}
+
+.reveal-value {
+  margin: 0;
+  font-weight: 600;
+}
+
+.party-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 0.1rem 0.5rem;
+  margin-left: 0.4rem;
+}
+
+.compare-note {
+  background: var(--bg);
+  border-left: 4px solid var(--accent);
+  padding: 0.6rem 0.85rem;
+  border-radius: 0 8px 8px 0;
+  margin-top: 1rem;
+}
+
+/* ---------- Deck nav ---------- */
+
+.deck-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+/* ---------- Done screen ---------- */
+
+.recap-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.85rem 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.recap-item h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+}
+
+.recap-line {
+  font-size: 0.9rem;
+  margin: 0.2rem 0;
+}

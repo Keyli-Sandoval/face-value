@@ -1,0 +1,86 @@
+[
+  {
+    "id": "person-lincoln-council-d1",
+    "name": "James Michael Bowers",
+    "office": "Lincoln City Council, District 1",
+    "district": "1",
+    "jurisdiction": "lincoln-city",
+    "party": null,
+    "party_note": "no party of record \u2014 officially nonpartisan office",
+    "term_start": "2023-05",
+    "sources": [
+      "https://www.lincoln.ne.gov/City/City-Council/Council-Members"
+    ]
+  },
+  {
+    "id": "person-tony-fulton",
+    "name": "Tony Fulton",
+    "office": "Petition organizer, Good Government Lincoln (former Nebraska State Senator)",
+    "jurisdiction": "lincoln-city",
+    "party": null,
+    "party_note": "party affiliation not verified for this card",
+    "sources": [
+      "https://nebraskaexaminer.com/2026/08/19/conservative-group-submits-new-signatures-for-3-petitions-to-reshape-lincoln-city-elections/"
+    ]
+  },
+  {
+    "id": "person-airport-hove",
+    "name": "Chris Hove",
+    "office": "Lincoln Airport Authority Board, Chairperson",
+    "jurisdiction": "lincoln-city",
+    "party": null,
+    "term_start": "2023",
+    "sources": [
+      "https://lincolnairport.com/airport-board-and-senior-staff/"
+    ],
+    "party_note": "no party of record \u2014 officially nonpartisan office"
+  },
+  {
+    "id": "person-airport-behmer-popp",
+    "name": "Nicki Behmer-Popp",
+    "office": "Lincoln Airport Authority Board, Vice-Chairperson",
+    "jurisdiction": "lincoln-city",
+    "party": null,
+    "term_start": "2021-05",
+    "sources": [
+      "https://lincolnairport.com/airport-board-and-senior-staff/"
+    ],
+    "party_note": "no party of record \u2014 officially nonpartisan office"
+  },
+  {
+    "id": "person-airport-stokes",
+    "name": "Chris Stokes",
+    "office": "Lincoln Airport Authority Board, Secretary",
+    "jurisdiction": "lincoln-city",
+    "party": null,
+    "term_start": "2023-05",
+    "sources": [
+      "https://lincolnairport.com/airport-board-and-senior-staff/"
+    ],
+    "party_note": "no party of record \u2014 officially nonpartisan office"
+  },
+  {
+    "id": "person-airport-emlich",
+    "name": "Vanessa Emlich",
+    "office": "Lincoln Airport Authority Board, Assistant Secretary",
+    "jurisdiction": "lincoln-city",
+    "party": null,
+    "term_start": "2023-09",
+    "sources": [
+      "https://lincolnairport.com/airport-board-and-senior-staff/"
+    ],
+    "party_note": "no party of record \u2014 officially nonpartisan office"
+  },
+  {
+    "id": "person-airport-olsson",
+    "name": "John S. Olsson",
+    "office": "Lincoln Airport Authority Board, Member",
+    "jurisdiction": "lincoln-city",
+    "party": null,
+    "term_start": "2021-05",
+    "sources": [
+      "https://lincolnairport.com/airport-board-and-senior-staff/"
+    ],
+    "party_note": "no party of record \u2014 officially nonpartisan office"
+  }
+]

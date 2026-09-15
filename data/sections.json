@@ -1,0 +1,10 @@
+[
+  { "id": "housing-and-rent", "label": "Housing and rent" },
+  { "id": "wages-and-work", "label": "Wages and work" },
+  { "id": "schools", "label": "Schools" },
+  { "id": "policing-and-courts", "label": "Policing and courts" },
+  { "id": "roads-and-transit", "label": "Roads and transit" },
+  { "id": "taxes-and-budget", "label": "Taxes and city budget" },
+  { "id": "water-and-land", "label": "Water and land" },
+  { "id": "elections-and-voting", "label": "Elections and voting" }
+]
