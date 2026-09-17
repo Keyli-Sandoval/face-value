@@ -8,7 +8,7 @@ for sourcing and plain-language method.
 
 ## Status
 
-**Phase 2 — location, sections, and multiple levels of government.**
+**Phase 3 — summary + output.** Eight cards, two filters, no party field.
 
 - Real street+ZIP lookup against bundled Lincoln City Council and Nebraska
   Legislature district boundaries (real GeoJSON from the Lincoln Open Data
@@ -18,19 +18,31 @@ for sourcing and plain-language method.
 - Honest handling of ZIP codes that span more than one district (most Lincoln
   ZIPs do — city council and legislative boundaries don't follow ZIP lines),
   and of ZIP codes outside bundled coverage.
-- Multi-select issue-section filter; sections with zero matching cards for a
-  given address are hidden.
-- Cards are tagged by level of government (`city` or `state`) and, for
-  personalized state cards, restricted to the specific legislative district
-  they apply to — proving the "local to bigger" architecture with a real
-  Nebraska Legislature bill (LB22) tied to District 26, without needing to
-  hand-author every district.
+- **Two filters, both optional and multi-select: topic and how local it is**
+  (city vs. state, from `jurisdiction_level`). Sections or levels with zero
+  matching cards for a given address are hidden rather than shown empty.
+- Eight cards across `wages-and-work`, `elections-and-voting`,
+  `taxes-and-budget` (×2), `schools`, `housing-and-rent`, and
+  `roads-and-transit` — six city-level, two state-level (Nebraska
+  Legislature). `housing-and-rent`, `roads-and-transit`, and `schools` were
+  added in this pass; `policing-and-courts` and `water-and-land` stay empty
+  (and hidden) until a card for them clears the same neutral-wording bar as
+  the deliberately-excluded Fairness Ordinance card (PLAN.md §11).
+- **No party field.** Every official currently in `people.json` holds an
+  officially nonpartisan office, so the reveal shows who and what body, never
+  a party — see PLAN.md §9 for the reasoning if that needs revisiting later.
+- **Summary screen works:** a full recap of every card you reacted to, with
+  your reaction, who was behind it, the outcome, how your rep voted if known,
+  and the source link. "Print / Save as PDF" uses a scoped print stylesheet
+  that hides interactive chrome and prints source URLs inline. "Copy as text"
+  uses the Clipboard API with a visible, pre-selected textarea fallback for
+  contexts (like a sandboxed iframe) where that API is blocked.
 - Jurisdiction-agnostic by design: a second city or state is new JSON +
   GeoJSON files, not new code (see `data/districts/lincoln.json`'s layer
   structure).
 
-Not yet built: printable/copyable summary screen, iframe embed packaging, the
-methodology page, and an accessibility/production polish pass (Phase 3–4).
+Not yet built: iframe embed packaging, the methodology page, and an
+accessibility/production polish pass (Phase 4).
 
 ## Running it locally
 
@@ -53,8 +65,9 @@ GeoJSON by `scripts/build-districts.py` scratch tooling (regenerate by editing
 the layer list at the top of that script, not by hand-editing the JSON).
 
 Validate before committing changes (requires Node — not installed on every
-dev machine, so this repo's data was last checked by hand with `jq`; run
-these for real once Node is available):
+dev machine; this repo's 8-card data was last checked with a scratch Python
+port of these same two scripts' rules, since Node wasn't available here. Run
+the real scripts below once Node is available):
 
 ```bash
 node scripts/validate.js

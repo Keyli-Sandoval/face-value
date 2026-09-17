@@ -5,8 +5,6 @@
     "office": "Lincoln City Council, District 1",
     "district": "1",
     "jurisdiction": "lincoln-city",
-    "party": null,
-    "party_note": "no party of record \u2014 officially nonpartisan office",
     "term_start": "2023-05",
     "sources": [
       "https://www.lincoln.ne.gov/City/City-Council/Council-Members"
@@ -18,8 +16,6 @@
     "office": "Lincoln City Council, District 2",
     "district": "2",
     "jurisdiction": "lincoln-city",
-    "party": null,
-    "party_note": "no party of record — officially nonpartisan office",
     "sources": [
       "https://www.lincoln.ne.gov/City/City-Council/Council-Members",
       "https://opendata.lincoln.ne.gov/ (City Council Districts dataset)"
@@ -31,8 +27,6 @@
     "office": "Lincoln City Council, District 3",
     "district": "3",
     "jurisdiction": "lincoln-city",
-    "party": null,
-    "party_note": "no party of record — officially nonpartisan office",
     "sources": [
       "https://www.lincoln.ne.gov/City/City-Council/Council-Members",
       "https://opendata.lincoln.ne.gov/ (City Council Districts dataset)"
@@ -44,8 +38,6 @@
     "office": "Lincoln City Council, District 4 (Council Chair)",
     "district": "4",
     "jurisdiction": "lincoln-city",
-    "party": null,
-    "party_note": "no party of record — officially nonpartisan office",
     "sources": [
       "https://www.lincoln.ne.gov/City/City-Council/Council-Members",
       "https://opendata.lincoln.ne.gov/ (City Council Districts dataset)"
@@ -57,8 +49,6 @@
     "office": "Nebraska Legislature, District 26",
     "district": "26",
     "jurisdiction": "nebraska-legislature",
-    "party": null,
-    "party_note": "no party of record — the Nebraska Legislature is officially nonpartisan",
     "term_start": "2023-01",
     "sources": [
       "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=26",
@@ -66,12 +56,21 @@
     ]
   },
   {
+    "id": "person-ne-senator-d45-sanders",
+    "name": "Rita Sanders",
+    "office": "Nebraska Legislature, District 45",
+    "district": "45",
+    "jurisdiction": "nebraska-legislature",
+    "term_start": "2021-01",
+    "sources": [
+      "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=45"
+    ]
+  },
+  {
     "id": "person-tony-fulton",
     "name": "Tony Fulton",
     "office": "Petition organizer, Good Government Lincoln (former Nebraska State Senator)",
     "jurisdiction": "lincoln-city",
-    "party": null,
-    "party_note": "party affiliation not verified for this card",
     "sources": [
       "https://nebraskaexaminer.com/2026/08/19/conservative-group-submits-new-signatures-for-3-petitions-to-reshape-lincoln-city-elections/"
     ]
@@ -81,59 +80,49 @@
     "name": "Chris Hove",
     "office": "Lincoln Airport Authority Board, Chairperson",
     "jurisdiction": "lincoln-city",
-    "party": null,
     "term_start": "2023",
     "sources": [
       "https://lincolnairport.com/airport-board-and-senior-staff/"
-    ],
-    "party_note": "no party of record \u2014 officially nonpartisan office"
+    ]
   },
   {
     "id": "person-airport-behmer-popp",
     "name": "Nicki Behmer-Popp",
     "office": "Lincoln Airport Authority Board, Vice-Chairperson",
     "jurisdiction": "lincoln-city",
-    "party": null,
     "term_start": "2021-05",
     "sources": [
       "https://lincolnairport.com/airport-board-and-senior-staff/"
-    ],
-    "party_note": "no party of record \u2014 officially nonpartisan office"
+    ]
   },
   {
     "id": "person-airport-stokes",
     "name": "Chris Stokes",
     "office": "Lincoln Airport Authority Board, Secretary",
     "jurisdiction": "lincoln-city",
-    "party": null,
     "term_start": "2023-05",
     "sources": [
       "https://lincolnairport.com/airport-board-and-senior-staff/"
-    ],
-    "party_note": "no party of record \u2014 officially nonpartisan office"
+    ]
   },
   {
     "id": "person-airport-emlich",
     "name": "Vanessa Emlich",
     "office": "Lincoln Airport Authority Board, Assistant Secretary",
     "jurisdiction": "lincoln-city",
-    "party": null,
     "term_start": "2023-09",
     "sources": [
       "https://lincolnairport.com/airport-board-and-senior-staff/"
-    ],
-    "party_note": "no party of record \u2014 officially nonpartisan office"
+    ]
   },
   {
     "id": "person-airport-olsson",
     "name": "John S. Olsson",
     "office": "Lincoln Airport Authority Board, Member",
     "jurisdiction": "lincoln-city",
-    "party": null,
     "term_start": "2021-05",
     "sources": [
       "https://lincolnairport.com/airport-board-and-senior-staff/"
-    ],
-    "party_note": "no party of record \u2014 officially nonpartisan office"
+    ]
   }
 ]

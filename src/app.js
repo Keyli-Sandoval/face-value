@@ -65,10 +65,22 @@ async function main() {
     districtLayers = null;
   }
 
+  function cardContext(card, resolvedLocation) {
+    const sponsor = peopleById.get(card.sponsor_id) || null;
+    const boardMembers = (card.board_members || [])
+      .map((id) => peopleById.get(id))
+      .filter(Boolean);
+    const testPersonId = personIdForCard(card, resolvedLocation);
+    const testPerson = peopleById.get(testPersonId) || null;
+    const testVote = findVoteFor(card, testPersonId);
+    return { sponsor, boardMembers, testPerson, testVote };
+  }
+
   const state = {
     screen: "intro",
     resolvedLocation: null,
     selectedSections: new Set(),
+    selectedLevels: new Set(),
     index: 0,
     responses: {},
   };
@@ -77,6 +89,7 @@ async function main() {
     state.screen = "intro";
     state.resolvedLocation = null;
     state.selectedSections = new Set();
+    state.selectedLevels = new Set();
     state.index = 0;
     state.responses = {};
     render();
@@ -100,14 +113,25 @@ async function main() {
   function visibleCards() {
     return cards.filter((card) => {
       if (!cardAppliesToLocation(card, state.resolvedLocation)) return false;
-      if (state.selectedSections.size === 0) return true;
-      return (card.sections || []).some((s) => state.selectedSections.has(s));
+      if (state.selectedSections.size > 0 && !(card.sections || []).some((s) => state.selectedSections.has(s))) {
+        return false;
+      }
+      if (state.selectedLevels.size > 0 && !state.selectedLevels.has(card.jurisdiction_level)) {
+        return false;
+      }
+      return true;
     });
   }
 
   function toggleSection(id) {
     if (state.selectedSections.has(id)) state.selectedSections.delete(id);
     else state.selectedSections.add(id);
+    render();
+  }
+
+  function toggleLevel(id) {
+    if (state.selectedLevels.has(id)) state.selectedLevels.delete(id);
+    else state.selectedLevels.add(id);
     render();
   }
 
@@ -163,18 +187,23 @@ async function main() {
     if (state.screen === "sections") {
       const inCoverage = cards.filter((c) => cardAppliesToLocation(c, state.resolvedLocation));
       const cardsBySection = new Map();
+      const cardsByLevel = new Map();
       for (const card of inCoverage) {
         for (const s of card.sections || []) {
           cardsBySection.set(s, (cardsBySection.get(s) || 0) + 1);
         }
+        cardsByLevel.set(card.jurisdiction_level, (cardsByLevel.get(card.jurisdiction_level) || 0) + 1);
       }
       renderSections(app, {
         sections,
         cardsBySection,
+        cardsByLevel,
         selected: state.selectedSections,
+        selectedLevels: state.selectedLevels,
         onToggle: toggleSection,
+        onToggleLevel: toggleLevel,
         onContinue: startDeck,
-        onSkip: () => { state.selectedSections = new Set(); startDeck(); },
+        onSkip: () => { state.selectedSections = new Set(); state.selectedLevels = new Set(); startDeck(); },
       });
       return;
     }
@@ -186,14 +215,8 @@ async function main() {
         return;
       }
       const card = deck[state.index];
-      const sponsor = peopleById.get(card.sponsor_id) || null;
-      const boardMembers = (card.board_members || [])
-        .map((id) => peopleById.get(id))
-        .filter(Boolean);
+      const { sponsor, boardMembers, testPerson, testVote } = cardContext(card, state.resolvedLocation);
       const response = state.responses[card.id] || {};
-      const testPersonId = personIdForCard(card, state.resolvedLocation);
-      const testPerson = peopleById.get(testPersonId) || null;
-      const testVote = findVoteFor(card, testPersonId);
 
       renderCard(app, {
         card,
@@ -212,7 +235,17 @@ async function main() {
     }
 
     if (state.screen === "done") {
-      renderDone(app, { cards: visibleCards(), responses: state.responses, onRestart: goIntro });
+      const deck = visibleCards();
+      const items = deck.map((card) => ({
+        card,
+        response: state.responses[card.id] || {},
+        ...cardContext(card, state.resolvedLocation),
+      }));
+      renderDone(app, {
+        items,
+        onRestart: goIntro,
+        onPrint: () => window.print(),
+      });
     }
   }
 

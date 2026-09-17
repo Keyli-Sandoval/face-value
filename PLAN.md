@@ -110,7 +110,7 @@ and understand it in five minutes.
   never hidden - only the person is.**
 
 ### Back (after reaction)
-- Who introduced it, **and their party affiliation.**
+- Who introduced it, or which body approved it.
 - Outcome and date: passed / failed / pending / blocked in court.
 - How the user's own representative voted.
 - How the user's reaction compares to that vote - stated neutrally, never "gotcha."
@@ -133,6 +133,11 @@ Fixed list of eight. Named for life, not for government committees.
 
 Do not add sections that have no cards. Hide any section with zero matching cards
 rather than showing an empty result.
+
+The only two filters are **topic** (this table) and **how local it is** (city vs.
+state, from each card's `jurisdiction_level`). Both are optional, both multi-select,
+both AND together. There is no other filter axis — deliberately no way to filter by
+party, sponsor, or outcome, since that would invite picking a side before reading.
 
 ## 9. Data model
 
@@ -174,11 +179,16 @@ Two data files. Content is authored by hand and reviewed by a human before it sh
   "office": "Lincoln City Council",
   "district": "3",
   "jurisdiction": "lincoln-city",
-  "party": "...",
   "term_start": "2025-05",
   "sources": ["..."]
 }
 ```
+
+No `party` field. Both offices covered so far (Lincoln City Council, Nebraska
+Legislature) are officially nonpartisan, and the reveal never shows party —
+decided after Phase 2, since a field that's null for every real person here
+was dead weight. If a future jurisdiction has partisan officials, revisit
+this as a deliberate, visible toggle rather than reviving a silent field.
 
 ### Deduplication (required)
 `jurisdiction + official_ref` is the unique key. Add a validation script that runs on
@@ -227,6 +237,24 @@ Ordinance. Structurally it is the ideal reveal card, but it is the hardest test 
 neutral wording. Add it only after the comprehension check in §10 has passed cleanly on
 the four above. This is a decision, not an oversight.
 
+**Added in the 8-card pass (Sept. 2026):** a fifth card (LB22, `taxes-and-budget`)
+came from Phase 2. Three more were added to reach 8 and fill previously-empty
+sections without touching `policing-and-courts` — the section closest in shape to the
+excluded Fairness Ordinance card, held to the same bar above:
+
+5. **Nebraska school cellphone limits (LB140, 2025).** State level, `schools`.
+   Passed 48-1; picked partly because near-unanimous passage makes it a weak test
+   of "guess the political side," which is the point.
+6. **Lincoln fair housing initiative (May 2025).** City level, `housing-and-rent`.
+   A citizen petition, not a council vote — reveal is the coalition and the vote
+   tally, not a party.
+7. **Lincoln on the Move sales tax renewal (April 2025).** City level,
+   `roads-and-transit`. Council referred it 7-0; voters decided it.
+
+`schools` and `policing-and-courts` were both empty before this pass; only `schools`
+got a card. `policing-and-courts` stays empty (hidden per §8) until a card for it
+can clear the same neutral-wording bar as the excluded Fairness Ordinance card.
+
 ## 12. Build phases
 
 **Phase 1 — Core loop.** Card deck, reaction, flip, hard-coded location. The four cards
@@ -238,8 +266,11 @@ question, honest out-of-area path, section filter.
 *Done when:* two different Lincoln addresses produce different representatives, and the
 network tab shows no address ever leaving the browser.
 
-**Phase 3 — Summary + output.** Summary screen, print stylesheet, copy-as-text.
-*Done when:* the printed page is legible on one sheet and readable at a kitchen table.
+**Phase 3 — Summary + output.** Summary screen, print stylesheet, copy-as-text. **Done.**
+*Done when:* the printed page is legible and readable at a kitchen table. (At 8
+cards a session's recap can run past one physical sheet; "legible" was kept as
+the bar, not "one page," since forcing brevity would mean cutting sourcing or
+the comparison line.)
 
 **Phase 4 — Embed + polish.** iframe packaging, methodology page, official profiles,
 accessibility pass, validation script.

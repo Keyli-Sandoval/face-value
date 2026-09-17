@@ -103,12 +103,7 @@ function renderBack(card, ctx) {
     rows.push(
       el("div", { class: "reveal-row" }, [
         el("p", { class: "reveal-label", text: card.sponsor_role || "Introduced by" }),
-        el("p", { class: "reveal-value" }, [
-          document.createTextNode(sponsor.name + " "),
-          sponsor.party
-            ? el("span", { class: "party-tag", text: sponsor.party })
-            : el("span", { class: "impact-source", text: `(${sponsor.party_note || "party affiliation not on record"})` }),
-        ]),
+        el("p", { class: "reveal-value", text: sponsor.name }),
       ])
     );
   } else if (card.approving_body) {

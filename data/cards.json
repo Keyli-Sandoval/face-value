@@ -299,5 +299,184 @@
     "reviewed_by": "Keyli",
     "reviewed_at": "2026-09-15",
     "readability_grade": 7.2
+  },
+  {
+    "id": "ne-lb140-2025",
+    "jurisdiction": "nebraska-legislature",
+    "official_ref": "Legislative Bill 140 (2025), Nebraska Legislature",
+    "plain_title": "Nebraska schools must limit phone use in class",
+    "summary": "Before this law, each Nebraska school district set its own rules on phones in class. Now every public school board must write a rule that limits phone use during class time. Schools must have this rule in place by the start of the 2025-26 school year. A student can still use a phone for a health need, a plan required by law, or a class activity the school allows.",
+    "impacts": [
+      {
+        "text": "Every Nebraska public school must have a phone rule in place for the 2025-26 school year. About 178 school districts already had one before this law passed.",
+        "source_id": "src-3"
+      },
+      {
+        "text": "A student can still use a phone for a health need, a plan required by law such as an IEP, or a class activity the school allows.",
+        "source_id": "src-1"
+      },
+      {
+        "text": "The state says this rule costs it nothing extra. Schools that already had a phone rule do not need to write a new one.",
+        "source_id": "src-2"
+      }
+    ],
+    "fiscal": {
+      "text": "The state found no extra cost to itself. About 178 of Nebraska's roughly 240 school districts already had a phone rule before this law. The rest must write one, paid for locally.",
+      "source_id": "src-2"
+    },
+    "sections": [
+      "schools"
+    ],
+    "status": "passed",
+    "status_date": "2025-05-14",
+    "sponsor_id": "person-ne-senator-d45-sanders",
+    "jurisdiction_level": "state",
+    "votes": [],
+    "votes_note": "This bill passed 48-1 on Final Reading, with an emergency clause, on May 14, 2025. The Governor signed it on May 20, 2025. Individual senators' votes by name were not confirmed for this card.",
+    "sources": [
+      {
+        "id": "src-1",
+        "title": "Nebraska Legislature — LB140, official bill record",
+        "url": "https://nebraskalegislature.gov/bills/view_bill.php?DocumentID=59086"
+      },
+      {
+        "id": "src-2",
+        "title": "LB140 Fiscal Note",
+        "url": "https://nebraskalegislature.gov/FloorDocs/109/PDF/FN/LB140_20250304-104536.pdf"
+      },
+      {
+        "id": "src-3",
+        "title": "School cellphone ban passed — Unicameral Update",
+        "url": "https://update.legislature.ne.gov/?p=38901"
+      },
+      {
+        "id": "src-4",
+        "title": "Nebraska Gov. Jim Pillen's cellphone ban in schools nears law — Nebraska Examiner",
+        "url": "https://nebraskaexaminer.com/briefs/nebraska-gov-banning-cellphones-in-school/"
+      }
+    ],
+    "reviewed_by": "Keyli",
+    "reviewed_at": "2026-09-17",
+    "readability_grade": 5.7
+  },
+  {
+    "id": "lnk-fair-housing-2025",
+    "jurisdiction": "lincoln-city",
+    "official_ref": "Prohibit Income Discrimination in Housing Initiative, approved by Lincoln voters May 6, 2025",
+    "plain_title": "Landlords can't turn away renters who use vouchers",
+    "summary": "Before this rule, a Lincoln landlord could turn down a renter just because of how they planned to pay. That included renters using a housing voucher or child support. A group called Lincoln for Fair Housing collected signatures to put a new rule on the ballot. The rule stops a landlord from turning down a renter over a lawful source of income, such as a housing voucher, Social Security, or public assistance. Lincoln voters said yes on May 6, 2025. Lincoln is now the first city in Nebraska with a rule like this.",
+    "impacts": [
+      {
+        "text": "A landlord can no longer say no to a renter just because they plan to pay with a housing voucher, Social Security, child support, or another lawful source of income.",
+        "source_id": "src-2"
+      },
+      {
+        "text": "This reached the ballot because a citizen group turned in 9,798 valid signatures. That was more than the 8,825 the city charter requires. The city council did not vote on it.",
+        "source_id": "src-1"
+      },
+      {
+        "text": "Voters said yes, 25,450 to 13,216. That's about 66%.",
+        "source_id": "src-2"
+      }
+    ],
+    "sections": [
+      "housing-and-rent"
+    ],
+    "status": "passed",
+    "status_date": "2025-05-06",
+    "approving_body": "Lincoln voters (citizen ballot initiative)",
+    "votes": [],
+    "votes_note": "This wasn't decided by a council vote. It reached the ballot through a citizen petition, and Lincoln voters decided it directly, 25,450 to 13,216.",
+    "sources": [
+      {
+        "id": "src-1",
+        "title": "'Lincoln for Fair Housing' Ballot Measure Certified for Lincoln's May 2025 Ballot — KLIN",
+        "url": "https://klin.com/2025/02/07/458410/"
+      },
+      {
+        "id": "src-2",
+        "title": "Lincoln voters approve ban on source-of-income housing discrimination — 1011 Now",
+        "url": "https://www.1011now.com/2025/05/07/lincoln-voters-approve-ban-source-of-income-housing-discrimination/"
+      },
+      {
+        "id": "src-3",
+        "title": "Lincoln, Nebraska, Prohibit Income Discrimination in Housing Initiative (May 2025) — Ballotpedia",
+        "url": "https://ballotpedia.org/Lincoln,_Nebraska,_Prohibit_Income_Discrimination_in_Housing_Initiative_(May_2025)"
+      },
+      {
+        "id": "src-4",
+        "title": "LWVLL Supports the Lincoln for Fair Housing Coalition — League of Women Voters Lincoln/Lancaster",
+        "url": "https://lincolnleague.org/lincoln-for-fair-housing/"
+      }
+    ],
+    "reviewed_by": "Keyli",
+    "reviewed_at": "2026-09-17",
+    "readability_grade": 6.9,
+    "jurisdiction_level": "city"
+  },
+  {
+    "id": "lnk-sales-tax-streets-2025",
+    "jurisdiction": "lincoln-city",
+    "official_ref": "Sales Tax Renewal for Infrastructure Improvements, approved by Lincoln voters April 8, 2025",
+    "plain_title": "Voters renew Lincoln's quarter-cent street repair tax",
+    "summary": "Since October 2019, Lincoln has added a quarter-cent tax to every taxable dollar spent in the city, under a program called Lincoln on the Move. The money can only be spent on street repair and new streets. That tax was due to expire. In February 2025, the city council voted to ask voters whether to keep it going. Voters said yes in April 2025, and the tax will now continue through September 2033.",
+    "impacts": [
+      {
+        "text": "This adds one-quarter of one cent in sales tax for every dollar spent in Lincoln, on top of the regular city and state sales tax.",
+        "source_id": "src-2"
+      },
+      {
+        "text": "The tax is expected to raise about $18 million a year for streets, or about $144 million over its next eight years.",
+        "source_id": "src-2"
+      },
+      {
+        "text": "Voters first approved this tax in 2019 by a close margin, 50.7% to 49.4%. This time it passed by a wider margin, about 67%, with 24,492 votes in favor and 12,265 against.",
+        "source_id": "src-1"
+      }
+    ],
+    "fiscal": {
+      "text": "The tax is expected to bring in about $18 million a year for street work, or about $144 million over its next eight years.",
+      "source_id": "src-2"
+    },
+    "sections": [
+      "roads-and-transit"
+    ],
+    "status": "passed",
+    "status_date": "2025-04-08",
+    "approving_body": "Lincoln voters (ballot measure referred by the City Council, 7-0)",
+    "votes": [
+      {
+        "person_id": "person-lincoln-council-d1",
+        "stage": "referral",
+        "vote": "yes"
+      }
+    ],
+    "votes_note": "The council's Feb. 3, 2025 vote to put this on the ballot was unanimous, 7-0. Lincoln voters then decided the final outcome directly.",
+    "sources": [
+      {
+        "id": "src-1",
+        "title": "Lincoln voters approve extension of quarter-cent sales tax for street improvements — 1011 Now",
+        "url": "https://www.1011now.com/2025/04/09/lincoln-voters-approve-extension-quarter-cent-sales-tax-street-improvements/"
+      },
+      {
+        "id": "src-2",
+        "title": "Lincoln on the Move — City of Lincoln, NE",
+        "url": "https://www.lincoln.ne.gov/City/Departments/LTU/LTU-Projects/LOTM"
+      },
+      {
+        "id": "src-3",
+        "title": "City council advances ballot measure to extend Lincoln's quarter-cent sales tax — 1011 Now",
+        "url": "https://www.1011now.com/2025/02/03/city-council-advances-ballot-measure-extend-lincolns-quarter-cent-sales-tax/"
+      },
+      {
+        "id": "src-4",
+        "title": "Lincoln, Nebraska, Sales Tax Renewal for Infrastructure Improvements Measure (April 2025) — Ballotpedia",
+        "url": "https://ballotpedia.org/Lincoln,_Nebraska,_Sales_Tax_Renewal_for_Infrastructure_Improvements_Measure_(April_2025)"
+      }
+    ],
+    "reviewed_by": "Keyli",
+    "reviewed_at": "2026-09-17",
+    "readability_grade": 7.4,
+    "jurisdiction_level": "city"
   }
 ]
