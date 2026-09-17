@@ -6,6 +6,9 @@ it turned out. Course project for ADPR 492 — see [PLAN.md](PLAN.md) for the
 full spec and [docs/face-value-source-guide.md](docs/face-value-source-guide.md)
 for sourcing and plain-language method.
 
+**Live:** <https://keyli-sandoval.github.io/face-value/> (via GitHub Pages —
+redeploys automatically within about a minute of every push to `main`).
+
 ## Status
 
 **Phase 3 — summary + output.** Eight cards, two filters, no party field.
