@@ -5,12 +5,13 @@
   --ink: #1a1a1a;
   --ink-muted: #4a4a4a;
   --border: #d8d5cc;
-  --accent: #1d4e89;
+  --accent: #3f6e57;
+  --accent-blue: #2f6e93;
   --accent-ink: #ffffff;
   --agree: #1d6b3f;
   --disagree: #8a2c2c;
   --unsure: #6a5a1f;
-  --focus: #1d4e89;
+  --focus: #2f6e93;
   --radius: 12px;
   --max-width: 480px;
   font-size: 16px;
@@ -286,7 +287,7 @@ form .btn-secondary {
 
 .level-badge {
   display: inline-block;
-  background: var(--accent);
+  background: var(--accent-blue);
   color: var(--accent-ink);
   border-radius: 4px;
   padding: 0.1rem 0.4rem;
